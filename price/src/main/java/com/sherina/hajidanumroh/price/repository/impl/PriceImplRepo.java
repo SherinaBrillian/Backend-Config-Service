@@ -26,13 +26,13 @@ public class PriceImplRepo implements PriceRepo {
     public void saveData(PriceRequest priceModel) {
         UUID chatUid = UUID.randomUUID();
         priceModel.setPriceUid(chatUid.toString().replace("-", ""));
-        Object[] queryParam = new Object[] {priceModel.getPriceUid(), priceModel.getPrice(), priceModel.getProductUid()};
+        Object[] queryParam = new Object[] {priceModel.getPriceUid(), priceModel.getPrice(), priceModel.getProductName(), priceModel.getProductUid()};
         jdbcTemplate.update(Constant.Price.INSERT_DATA, queryParam);
     }
 
     @Override
     public void updateData(PriceRequest priceModel) {
-        Object[] queryParam = new Object[] {priceModel.getPrice(), priceModel.getProductUid(), priceModel.getPriceUid()};
+        Object[] queryParam = new Object[] {priceModel.getPrice(), priceModel.getProductName(), priceModel.getProductUid(), priceModel.getPriceUid()};
         jdbcTemplate.update(Constant.Price.UPDATE_BY_ID, queryParam);
     }
 
@@ -66,6 +66,7 @@ public class PriceImplRepo implements PriceRepo {
 
                 priceModel.setPriceUid(rs.getString("priceUid"));
                 priceModel.setPrice(rs.getLong("price"));
+                priceModel.setProductName(rs.getString("productName"));
                 priceModel.setProductUid(rs.getString("productUid"));
 
                 data.add(priceModel);
@@ -82,6 +83,7 @@ public class PriceImplRepo implements PriceRepo {
             if(rs.next()){
                 priceModel.setPriceUid(rs.getString("priceUid"));
                 priceModel.setPrice(rs.getLong("price"));
+                priceModel.setProductName(rs.getString("productName"));
                 priceModel.setProductUid(rs.getString("productUid"));
                 return priceModel;
             }

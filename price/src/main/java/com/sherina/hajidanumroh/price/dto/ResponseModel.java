@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 public class ResponseModel {
     private String priceUid;
     private Long price;
+    private String productName;
     private String productUid;
     
 }

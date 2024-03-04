@@ -10,5 +10,6 @@ import lombok.NoArgsConstructor;
 public class PriceModel {
     private String priceUid;
     private Long price;
+    private String productName;
     private String productUid;
 }
