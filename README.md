@@ -37,3 +37,5 @@ Testing for this application can be done using Postman. You can perform various 
 Ensure that you have set up your MySQL database properly and that the application is running before testing. You can also automate testing using Postman collections and Newman for continuous integration pipelines.
 
 This project provides a solid foundation for building backend services with Spring Boot and MySQL database connectivity. Customize it according to your requirements and extend its functionality as needed.
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/11708290-7c9feff6-3865-40fe-aced-239108032805?action=collection%2Ffork&collection-url=entityId%3D11708290-7c9feff6-3865-40fe-aced-239108032805%26entityType%3Dcollection%26workspaceId%3Db8082477-685c-4add-8d56-64f1c34ecbdc#?env%5Bphp%5D=W3sia2V5IjoicGhwLXNlcnZlciIsInZhbHVlIjoiIGh0dHA6Ly8xMjcuMC4wLjE6ODAwMCIsImVuYWJsZWQiOnRydWUsInR5cGUiOiJkZWZhdWx0In0seyJrZXkiOiJiZWFyZXItdG9rZW4iLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWUsInR5cGUiOiJzZWNyZXQifSx7ImtleSI6ImJlYXJlci10b2tlbiIsInZhbHVlIjoiIiwiZW5hYmxlZCI6ZmFsc2UsInR5cGUiOiJkZWZhdWx0In1d)
