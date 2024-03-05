@@ -1,4 +1,4 @@
-package com.sherina.hajidanumroh.price.repository.impl;
+package com.sherina.hajidanumroh.config.repository.impl;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -12,10 +12,10 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.stereotype.Service;
 
-import com.sherina.hajidanumroh.price.constant.Constant;
-import com.sherina.hajidanumroh.price.dto.ResponseModel;
-import com.sherina.hajidanumroh.price.dto.request.PriceRequest;
-import com.sherina.hajidanumroh.price.repository.PriceRepo;
+import com.sherina.hajidanumroh.config.constant.Constant;
+import com.sherina.hajidanumroh.config.dto.ResponseModel;
+import com.sherina.hajidanumroh.config.dto.request.PriceRequest;
+import com.sherina.hajidanumroh.config.repository.PriceRepo;
 
 @Service
 public class PriceImplRepo implements PriceRepo {

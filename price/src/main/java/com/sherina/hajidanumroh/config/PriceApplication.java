@@ -1,4 +1,4 @@
-package com.sherina.hajidanumroh.price;
+package com.sherina.hajidanumroh.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

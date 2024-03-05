@@ -1,4 +1,4 @@
-package com.sherina.hajidanumroh.price.dto.response;
+package com.sherina.hajidanumroh.config.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class WebResponseBase {
+public class WebResponse<T> {
     private String status;
+    private T data; 
+    
 }

@@ -1,4 +1,4 @@
-package com.sherina.hajidanumroh.price.controller;
+package com.sherina.hajidanumroh.config.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sherina.hajidanumroh.price.dto.request.PriceRequest;
-import com.sherina.hajidanumroh.price.dto.response.PriceDataResponse;
-import com.sherina.hajidanumroh.price.dto.response.PriceListResponse;
-import com.sherina.hajidanumroh.price.dto.response.WebResponseBase;
-import com.sherina.hajidanumroh.price.service.impl.PriceImplService;
+import com.sherina.hajidanumroh.config.dto.request.PriceRequest;
+import com.sherina.hajidanumroh.config.dto.response.PriceDataResponse;
+import com.sherina.hajidanumroh.config.dto.response.PriceListResponse;
+import com.sherina.hajidanumroh.config.dto.response.WebResponseBase;
+import com.sherina.hajidanumroh.config.service.impl.PriceImplService;
 
 @RestController
 @RequestMapping("/api/v1/price")
