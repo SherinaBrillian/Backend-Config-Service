@@ -68,7 +68,7 @@ public class MappingRoleServiceImplRepo implements MappingRoleServiceRepo {
 
             mappingResponseModel.setMappingUid(rs.getString("mappingUid"));
             mappingResponseModel.setRoleUid(rs.getString("roleUid"));
-            mappingResponseModel.setServiceUid(rs.getString("servicesUid"));
+            mappingResponseModel.setServiceUid(rs.getString("serviceUid"));
             mappingResponseModel.setStatus(rs.getString("status"));
             mappingResponseModel.setPermission(rs.getString("permission"));
 
@@ -85,7 +85,7 @@ public class MappingRoleServiceImplRepo implements MappingRoleServiceRepo {
             if(rs.next()){
                 mappingResponseModel.setMappingUid(rs.getString("mappingUid"));
                 mappingResponseModel.setRoleUid(rs.getString("roleUid"));
-                mappingResponseModel.setServiceUid(rs.getString("servicesUid"));
+                mappingResponseModel.setServiceUid(rs.getString("serviceUid"));
                 mappingResponseModel.setStatus(rs.getString("status"));
                 mappingResponseModel.setPermission(rs.getString("permission"));
             return mappingResponseModel;
