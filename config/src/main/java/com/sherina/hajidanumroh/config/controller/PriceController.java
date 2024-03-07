@@ -17,7 +17,7 @@ import com.sherina.hajidanumroh.config.dto.response.WebResponseBase;
 import com.sherina.hajidanumroh.config.service.impl.PriceImplService;
 
 @RestController
-@RequestMapping("/api/v1/price")
+@RequestMapping("/api/v1/Price")
 public class PriceController {
     @Autowired
     PriceImplService priceRepo;

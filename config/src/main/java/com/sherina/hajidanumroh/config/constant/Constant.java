@@ -16,4 +16,12 @@ public class Constant {
             public static final String GET_ALL = "SELECT * FROM tbMappingRoleService";
             public static final String GET_BY_ID = "SELECT * FROM tbMappingRoleService WHERE mappingUid = ?";
         }
+
+        public static final class Role {
+            public static final String INSERT_DATA = "INSERT INTO tbRole (roleUid, roleDesc, statusUid) values (?, ?, ?)";
+            public static final String UPDATE_BY_ID = "UPDATE tbRole set roleDesc = ?, statusUid = ? where roleUid = ?";
+            public static final String DELETE_BY_ID = "DELETE FROM tbRole where roleUid = ?";
+            public static final String GET_ALL = "select * from tbRole";
+            public static final String GET_BY_ID = "select * from tbRole where roleUid = ? ";
+        }
 }
