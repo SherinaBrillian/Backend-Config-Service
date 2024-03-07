@@ -24,4 +24,12 @@ public class Constant {
             public static final String GET_ALL = "select * from tbRole";
             public static final String GET_BY_ID = "select * from tbRole where roleUid = ? ";
         }
+
+        public static final class Services {
+            public static final String INSERT_DATA = "INSERT INTO tbServices (serviceUid, serviceDesc, pathMenu, iconMenu, dirIconMenu) values (?, ?, ?, ?, ?)";
+            public static final String UPDATE_BY_ID = "UPDATE tbServices set serviceDesc = ?, pathMenu = ?, iconMenu = ?, dirIconMenu = ? where serviceUid = ?";
+            public static final String DELETE_BY_ID = "DELETE FROM tbServices where serviceUid = ?";
+            public static final String GET_ALL = "SELECT * from tbServices";
+            public static final String GET_BY_ID = "SELECT * from tbServices where serviceUid = ? ";
+        }
 }
